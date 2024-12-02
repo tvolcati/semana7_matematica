@@ -203,3 +203,187 @@ O versor da máxima taxa de variação é a direção do gradiente normalizada:
 
 ---
 
+
+### c) Máxima Intensidade de Transmissão de Energia – \( \langle S \rangle \)
+
+A intensidade média do vetor de Poynting para uma onda eletromagnética é dada por:
+
+```math
+\langle S \rangle = \frac{1}{2} \frac{E_m^2}{\mu_0 c}
+```
+
+Substituímos os valores conhecidos:
+- \( E_m = 9.0 \, \mathrm{V/m} \),
+- \( \mu_0 = 4\pi \cdot 10^{-7} \, \mathrm{H/m} \),
+- \( c = 3 \cdot 10^8 \, \mathrm{m/s} \).
+
+#### Passo a passo do cálculo:
+
+1. Calculamos \( \mu_0 c \):
+```math
+\mu_0 c = (4\pi \cdot 10^{-7}) \cdot (3 \cdot 10^8) = 1.2566 \cdot 10^{-6} \cdot 3 \cdot 10^8
+= 3.7699 \cdot 10^{2}
+```
+
+2. Calculamos \( E_m^2 \):
+```math
+E_m^2 = (9.0)^2 = 81.0
+```
+
+3. Substituímos na fórmula:
+```math
+\langle S \rangle = \frac{1}{2} \cdot \frac{81.0}{3.7699 \cdot 10^{2}}
+```
+
+4. Simplificamos:
+```math
+\langle S \rangle = \frac{81.0}{7.5398 \cdot 10^{2}}
+\quad \Rightarrow \quad
+\langle S \rangle \approx 1.075 \cdot 10^8 \, \mathrm{W/m^2}
+```
+
+**Resposta:**
+A intensidade média do vetor de Poynting é:
+```math
+\langle S \rangle \approx 1.075 \cdot 10^8 \, \mathrm{W/m^2}
+```
+
+---
+
+## ITEM 3 – Circuito LC Aplicado
+
+---
+
+### a) Determinar a Capacitância do Capacitor
+
+A frequência de oscilação de um circuito LC é dada por:
+
+```math
+f = \frac{1}{2\pi \sqrt{LC}}
+```
+
+Reorganizamos para \( C \):
+
+```math
+C = \frac{1}{(2\pi f)^2 L}
+```
+
+Substituímos os valores conhecidos:
+- \( f = 2.4 \cdot 10^9 \, \mathrm{Hz} \),
+- \( L = 10 \cdot 10^{-9} \, \mathrm{H} \).
+
+#### Passo a passo do cálculo:
+
+1. Calculamos \( 2\pi f \):
+```math
+2\pi f = 6.283 \cdot 2.4 \cdot 10^9 = 15.08 \cdot 10^9
+```
+
+2. Calculamos \( (2\pi f)^2 \):
+```math
+(2\pi f)^2 = (15.08 \cdot 10^9)^2 = 2.27 \cdot 10^{20}
+```
+
+3. Calculamos \( C \):
+```math
+C = \frac{1}{(2.27 \cdot 10^{20}) \cdot (10 \cdot 10^{-9})}
+= \frac{1}{2.27 \cdot 10^{11}}
+= 4.41 \cdot 10^{-12} \, \mathrm{F}
+```
+
+**Resposta:**
+A capacitância do capacitor é:
+```math
+C \approx 4.41 \, \mathrm{pF}
+```
+
+---
+
+### b) Calcular \( B_m \), \( k \), \( \omega \) e Escrever as Equações
+
+#### 1. Campo Magnético \( B_m \):
+
+O campo magnético é dado por:
+```math
+B_m = \frac{E_m}{c}
+```
+
+Substituímos \( E_m = 9.0 \, \mathrm{V/m} \) e \( c = 3 \cdot 10^8 \, \mathrm{m/s} \):
+```math
+B_m = \frac{9.0}{3 \cdot 10^8} = 3.0 \cdot 10^{-8} \, \mathrm{T}
+```
+
+#### 2. Frequência Angular \( \omega \):
+
+A frequência angular é:
+```math
+\omega = 2\pi f
+```
+
+Substituímos \( f = 2.4 \cdot 10^9 \):
+```math
+\omega = 2\pi \cdot 2.4 \cdot 10^9 = 15.08 \cdot 10^9 \, \mathrm{rad/s}
+```
+
+#### 3. Número de Onda \( k \):
+
+O número de onda é dado por:
+```math
+k = \frac{\omega}{c}
+```
+
+Substituímos \( \omega = 15.08 \cdot 10^9 \, \mathrm{rad/s} \) e \( c = 3 \cdot 10^8 \, \mathrm{m/s} \):
+```math
+k = \frac{15.08 \cdot 10^9}{3 \cdot 10^8} = 50.27 \, \mathrm{rad/m}
+```
+
+#### 4. Funções das Ondas:
+
+As funções para os campos elétrico e magnético são:
+
+Campo elétrico:
+```math
+\vec{E}(z, t) = 9.0 \cos(50.27z - 15.08 \cdot 10^9 t) \hat{x} \, \mathrm{V/m}
+```
+
+Campo magnético:
+```math
+\vec{B}(z, t) = 3.0 \cdot 10^{-8} \cos(50.27z - 15.08 \cdot 10^9 t) \hat{y} \, \mathrm{T}
+```
+
+---
+
+### c) Intensidade Média do Vetor de Poynting
+
+A intensidade média do vetor de Poynting é dada por:
+```math
+\langle S \rangle = \frac{1}{2} \frac{E_m^2}{\mu_0 c}
+```
+
+Substituímos os valores:
+- \( E_m = 9.0 \, \mathrm{V/m} \),
+- \( \mu_0 c = 3.7699 \cdot 10^2 \).
+
+#### Passo a passo:
+
+1. Calculamos \( E_m^2 \):
+```math
+E_m^2 = 9^2 = 81.0
+```
+
+2. Substituímos na fórmula:
+```math
+\langle S \rangle = \frac{1}{2} \cdot \frac{81.0}{3.7699 \cdot 10^{2}}
+= \frac{81.0}{7.5398 \cdot 10^{2}}
+```
+
+3. Simplificamos:
+```math
+\langle S \rangle \approx 1.075 \cdot 10^8 \, \mathrm{W/m^2}
+```
+
+**Resposta:**
+A intensidade média do vetor de Poynting é:
+```math
+\langle S \rangle \approx 1.075 \cdot 10^8 \, \mathrm{W/m^2}
+```
